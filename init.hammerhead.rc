@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-import init.superuser.rc
 import init.hammerhead.usb.rc
 
 on early-init
@@ -456,3 +455,7 @@ service time_daemon /system/bin/time_daemon
     user root
     group root
 
+service su_daemon /system/xbin/su --daemon
+    class core
+    user root
+    group root
