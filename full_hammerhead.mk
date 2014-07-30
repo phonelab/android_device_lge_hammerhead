@@ -30,5 +30,7 @@ PRODUCT_MODEL := AOSP on HammerHead
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+PRODUCT_EXTRA_RECOVERY_KEYS := vendor/phonelab/hammerhead/security/platform
+
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
